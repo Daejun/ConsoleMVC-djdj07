@@ -43,4 +43,4 @@ mvc/
 
 ## 상태
 
-현재 설계 단계이며 코드 구현은 아직 시작하지 않았다.
+TDD 진행 순서 1~6단계(빌드 스켈레톤 → Model → Controller → ConsoleView → main.cpp → 전체 테스트 통과) 구현 완료. `ctest`로 전체 테스트 스위트(20개) 통과 확인됨.
