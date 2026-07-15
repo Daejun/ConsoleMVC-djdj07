@@ -8,8 +8,11 @@ FetchContent_MakeAvailable(googletest)
 
 add_executable(mvc_tests
   PlaceholderTest.cpp
+  ItemRepositoryTest.cpp
+  ${CMAKE_SOURCE_DIR}/src/model/ItemRepository.cpp
 )
 
+target_include_directories(mvc_tests PRIVATE ${CMAKE_SOURCE_DIR}/src)
 target_link_libraries(mvc_tests PRIVATE gtest_main)
 
 include(GoogleTest)
