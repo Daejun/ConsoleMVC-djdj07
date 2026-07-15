@@ -9,10 +9,12 @@ FetchContent_MakeAvailable(googletest)
 add_executable(mvc_tests
   PlaceholderTest.cpp
   ItemRepositoryTest.cpp
+  ItemControllerTest.cpp
   ${CMAKE_SOURCE_DIR}/src/model/ItemRepository.cpp
+  ${CMAKE_SOURCE_DIR}/src/controller/ItemController.cpp
 )
 
-target_include_directories(mvc_tests PRIVATE ${CMAKE_SOURCE_DIR}/src)
+target_include_directories(mvc_tests PRIVATE ${CMAKE_SOURCE_DIR}/src ${CMAKE_CURRENT_SOURCE_DIR})
 target_link_libraries(mvc_tests PRIVATE gtest_main)
 
 include(GoogleTest)
