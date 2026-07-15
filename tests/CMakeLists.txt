@@ -10,8 +10,10 @@ add_executable(mvc_tests
   PlaceholderTest.cpp
   ItemRepositoryTest.cpp
   ItemControllerTest.cpp
+  ConsoleViewTest.cpp
   ${CMAKE_SOURCE_DIR}/src/model/ItemRepository.cpp
   ${CMAKE_SOURCE_DIR}/src/controller/ItemController.cpp
+  ${CMAKE_SOURCE_DIR}/src/view/ConsoleView.cpp
 )
 
 target_include_directories(mvc_tests PRIVATE ${CMAKE_SOURCE_DIR}/src ${CMAKE_CURRENT_SOURCE_DIR})
